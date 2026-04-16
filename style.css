@@ -1,0 +1,107 @@
+ /* تنسيق عام للموقع */
+body {
+    background-color: lightgray; /* لون خلفية رمادي فاتح */
+    font-family: Arial;
+    margin: 0;
+    color: black;
+}
+
+/* الهيدر العلوي */
+header {
+    background-color: navy; /* لون كحلي */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* قائمة الروابط */
+nav {
+    background-color: darkblue;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* المحتوى الرئيسي */
+main {
+    padding: 20px;
+}
+
+/* تنسيق الفورم (النموذج) ليكون مرتباً */
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+    max-width: 400px;
+    margin: auto; /* لتوسيط الفورم */
+}
+
+/* جعل الخانات تحت بعضها برأسياً */
+input, textarea {
+    display: block; /* تجعل كل خانة في سطر لوحدها */
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+/* تنسيق الزرار */
+button {
+    background-color: navy;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* تنسيق الجدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+/* الفوتر الأسفل */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block; /* الروابط تيجي تحت بعضها في الموبايل */
+        margin: 10px 0;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;     
+    }
+
+    form {
+        width: 95%;    
+    }
+
+    .main-img {
+        width: 100%; /* الصورة تملأ الشاشة في الموبايل */
+    }
+}
